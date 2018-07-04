@@ -17,6 +17,9 @@
 		CC102C3720D328E000870E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC102C3520D328E000870E62 /* LaunchScreen.storyboard */; };
 		CC102C4220D328E000870E62 /* The_Gas_LawsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC102C4120D328E000870E62 /* The_Gas_LawsTests.swift */; };
 		CC102C4D20D328E000870E62 /* The_Gas_LawsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC102C4C20D328E000870E62 /* The_Gas_LawsUITests.swift */; };
+		CC102C5B20D3603600870E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC102C5A20D3603600870E62 /* ViewController.swift */; };
+		CC2564FE20D45F9D00D6A100 /* PartialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2564FD20D45F9D00D6A100 /* PartialViewController.swift */; };
+		CC4239D420D841BD005AD993 /* ParticleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4239D320D841BD005AD993 /* ParticleHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		CC102C4820D328E000870E62 /* The Gas LawsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Gas LawsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC102C4C20D328E000870E62 /* The_Gas_LawsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Gas_LawsUITests.swift; sourceTree = "<group>"; };
 		CC102C4E20D328E000870E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC102C5A20D3603600870E62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC2564FD20D45F9D00D6A100 /* PartialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialViewController.swift; sourceTree = "<group>"; };
+		CC4239D320D841BD005AD993 /* ParticleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,10 @@
 				CC102C2820D328E000870E62 /* GameScene.sks */,
 				CC102C2A20D328E000870E62 /* Actions.sks */,
 				CC102C2C20D328E000870E62 /* GameScene.swift */,
+				CC4239D320D841BD005AD993 /* ParticleHandler.swift */,
 				CC102C2E20D328E000870E62 /* GameViewController.swift */,
+				CC2564FD20D45F9D00D6A100 /* PartialViewController.swift */,
+				CC102C5A20D3603600870E62 /* ViewController.swift */,
 				CC102C3020D328E000870E62 /* Main.storyboard */,
 				CC102C3320D328E000870E62 /* Assets.xcassets */,
 				CC102C3520D328E000870E62 /* LaunchScreen.storyboard */,
@@ -272,6 +281,9 @@
 			files = (
 				CC102C2D20D328E000870E62 /* GameScene.swift in Sources */,
 				CC102C2F20D328E000870E62 /* GameViewController.swift in Sources */,
+				CC4239D420D841BD005AD993 /* ParticleHandler.swift in Sources */,
+				CC102C5B20D3603600870E62 /* ViewController.swift in Sources */,
+				CC2564FE20D45F9D00D6A100 /* PartialViewController.swift in Sources */,
 				CC102C2720D328E000870E62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

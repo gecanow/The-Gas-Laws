@@ -9,64 +9,64 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    // Fields -- Laws //
+    private var particleLoc : SKNode!
+    private var lid : SKNode!
+    private var pHandle : SKShapeNode!
     
+    weak var viewController: GameViewController!
+    
+    var allBlue : ParticleHandler!
+    
+    var slider1Type = "V"
+    var slider2Type = "n"
+    
+    var originalLidY : CGFloat!
+    var lastSpeed = 10.0
+    
+    // Fields -- Dalton //
+    var allGreen : ParticleHandler!
+    var allBlack : ParticleHandler!
+    var allPink : ParticleHandler!
+    
+    //==============================
+    // DID MOVE
+    //==============================
     override func didMove(to view: SKView) {
+        self.physicsWorld.contactDelegate = self
+        particleLoc = self.childNode(withName: "//particleLocation")
+        lid = self.childNode(withName: "//lid")
+        originalLidY = lid.position.y
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
+        pHandle = SKShapeNode(circleOfRadius: 30)
+        pHandle.fillColor = .red
+        self.addChild(pHandle)
+        pHandle.position = CGPoint(x: lid.position.x, y: lid.position.y+20)
         
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
+        allBlue = ParticleHandler(speed: 80.0, rad: 7, color: .blue, position: particleLoc.position)
+        allBlue.emit(50, toGame: self)
         
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        allGreen = ParticleHandler(speed: 80.0, rad: 12, color: .green, position: particleLoc.position)
+        allBlack = ParticleHandler(speed: 80.0, rad: 4, color: .black, position: particleLoc.position)
+        allPink = ParticleHandler(speed: 80.0, rad: 7, color: .magenta, position: particleLoc.position)
     }
     
+    //====================================
+    // TOUCH FUNCTIONS
+    //====================================
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }
     
@@ -85,5 +85,110 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+    }
+    
+    //====================================
+    // Handles contact
+    //====================================
+    func didBegin(_ contact: SKPhysicsContact) {
+        var part = contact.bodyA.node
+        var wall = contact.bodyB.node
+        
+        if contact.bodyB.node?.name == "particle" {
+            part = contact.bodyB.node
+            wall = contact.bodyA.node
+        }
+        
+        if wall?.name == "left" || wall?.name == "right" {
+            part?.physicsBody?.velocity.dx = -(part?.physicsBody?.velocity.dx)!
+        } else {
+            part?.physicsBody?.velocity.dy = -(part?.physicsBody?.velocity.dy)!
+        }
+    }
+    
+    //====================================
+    // Updates the UI from the slider
+    //====================================
+    func updateUI(_ with: String, _ value: Int) {
+        switch with {
+        case "V":
+            lid.position.y = originalLidY+CGFloat(value - 50)
+            pHandle.position.y = originalLidY+CGFloat(value - 30)
+            volumeChecker()
+        case "n":
+            let count = allBlue.particleArray.count
+            if (value+1) > count {
+                allBlue.emit((value+1)-count, toGame: self)
+            } else {
+                allBlue.remove(count-(value+1))
+            }
+        case "P":
+            pHandle.run(SKAction.scale(to: CGFloat(Double(value)/50.0), duration: 0.1))
+        default: // "T"
+            let realVal = Double(value/4)
+            if realVal != lastSpeed {
+                allBlue.setSpeed(to: realVal, from: lastSpeed)
+                lastSpeed = realVal
+            }
+        }
+    }
+    
+    //==========================================
+    // Helper function that ensures particles
+    // don't leave the container when the
+    // volume is adjusted
+    //===========================================
+    func volumeChecker() {
+        for arr in [allBlue, allGreen, allBlack, allPink] {
+            for p in (arr?.particleArray)! {
+                if p.position.y > lid.position.y {
+                    p.removeAllActions()
+                    p.removeFromParent()
+                    arr?.particleArray.remove(at: (arr?.particleArray.index(of: p)!)!)
+                
+                    arr?.emit(1, toGame: self)
+                }
+            }
+        }
+    }
+    
+    //--------------------------------
+    // DALTON'S LAW FUNCTIONS
+    //--------------------------------
+    
+    func daltonsLawBegin() {
+        //emit(50)
+    }
+    
+    func didTapBlue(_ on: Bool) {
+        if on {
+            allBlue.emit(50, toGame: self)
+        } else {
+            allBlue.remove(50)
+        }
+    }
+    
+    func didTapGreen(_ on: Bool) {
+        if on {
+            allGreen.emit(50, toGame: self)
+        } else {
+            allGreen.remove(50)
+        }
+    }
+    
+    func didTapBlack(_ on: Bool) {
+        if on {
+            allBlack.emit(50, toGame: self)
+        } else {
+            allBlack.remove(50)
+        }
+    }
+    
+    func didTapPink(_ on: Bool) {
+        if on {
+            allPink.emit(50, toGame: self)
+        } else {
+            allPink.remove(50)
+        }
     }
 }

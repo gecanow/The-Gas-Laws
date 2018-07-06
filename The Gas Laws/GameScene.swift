@@ -11,6 +11,8 @@ import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    var title : SKLabelNode!
+    
     // Fields -- Laws //
     private var particleLoc : SKNode!
     private var lid : SKNode!
@@ -35,6 +37,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // DID MOVE
     //==============================
     override func didMove(to view: SKView) {
+        title = self.childNode(withName: "//title") as! SKLabelNode
+        
         self.physicsWorld.contactDelegate = self
         particleLoc = self.childNode(withName: "//particleLocation")
         lid = self.childNode(withName: "//lid")

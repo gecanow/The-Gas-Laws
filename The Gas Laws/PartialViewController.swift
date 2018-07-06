@@ -36,12 +36,13 @@ class PartialViewController: UIViewController {
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
+                scene.backgroundColor = UIColor(red: 255/255.0, green: 206/255.0, blue: 226/255.0, alpha: 1)
                 
                 // Present the scene
                 view.presentScene(scene)
                 
                 currentGame = scene as! GameScene
-                //currentGame.viewController = self
+                currentGame.title.text = "Dalton's Law"
             }
             
             view.ignoresSiblingOrder = true
@@ -163,7 +164,7 @@ class PartialViewController: UIViewController {
         return true
     }
     
-    @IBAction func onTappedBack(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegue", sender: self)
-    }
+//    @IBAction func onTappedBack(_ sender: Any) {
+//        performSegue(withIdentifier: "unwindSegue", sender: self)
+//    }
 }

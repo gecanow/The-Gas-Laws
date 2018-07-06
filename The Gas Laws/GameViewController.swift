@@ -15,6 +15,7 @@ class GameViewController: UIViewController {
     // Fields //
     
     var currentGame: GameScene!
+    var currentLaw: String!
     @IBOutlet weak var keptConstant: UILabel!
     @IBOutlet weak var relationDescription: UILabel!
     @IBOutlet weak var relation: UILabel!
@@ -46,6 +47,7 @@ class GameViewController: UIViewController {
                 
                 currentGame = scene as! GameScene
                 currentGame.viewController = self
+                currentGame.title.text = currentLaw
             }
             
             view.ignoresSiblingOrder = true
@@ -196,7 +198,7 @@ class GameViewController: UIViewController {
         return true
     }
     
-    @IBAction func onTappedBack(_ sender: UIButton) {
-        performSegue(withIdentifier: "unwindSegue", sender: self)
-    }
+//    @IBAction func onTappedBack(_ sender: UIButton) {
+//        performSegue(withIdentifier: "unwindSegue", sender: self)
+//    }
 }

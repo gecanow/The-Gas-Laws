@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var daltonsLaw: UIButton!
+    
     // Slider possibilities (arranged based on slider tags)
     let sliders = [["V", "n", "/"], ["P", "V", "*"], ["V", "T", "/"], ["P", "T", "/"], ["P", "n", "/"], ["T", "n", "*"]]
     let titles = ["Avogadro's Law", "Boyle's Law", "Charle's Law", "Guy Lussac's Law", "P / n Law", "T * n Law"]
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
     //========================================
     override func viewDidLoad() {
         super.viewDidLoad()
+        daltonsLaw.titleLabel?.textAlignment = .center
     }
     
     //========================================

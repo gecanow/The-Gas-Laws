@@ -30,6 +30,8 @@ class PartialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        minATM.minimumScaleFactor = 0.1
+        minATM.adjustsFontSizeToFitWidth = true
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'

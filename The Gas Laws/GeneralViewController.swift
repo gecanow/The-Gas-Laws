@@ -26,13 +26,13 @@ class GeneralViewController: UIViewController {
             if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-                scene.backgroundColor = .white
+                scene.backgroundColor = UIColor(red: 255/255.0, green: 253/255.0, blue: 154/255.0, alpha: 1)
                 
                 // Present the scene
                 view.presentScene(scene)
                 
                 currentGame = scene as! GameScene
-                currentGame.title.text = "General Overview"
+                currentGame.title.text = "General"
             }
             
             view.ignoresSiblingOrder = true

@@ -15,6 +15,7 @@ class OverviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 255/255.0, green: 253/255.0, blue: 154/255.0, alpha: 1)
         
         for law in lawDescriptions {
             law.minimumScaleFactor = 0.1

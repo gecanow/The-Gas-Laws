@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -88,16 +87,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where P is pressure, V is volume, n is moles, and T is temperature" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utj-3w-trt">
+                                <rect key="frame" x="0.0" y="608" width="375" height="59"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8eP-zx-IdO" firstAttribute="top" secondItem="iPG-KX-1OP" secondAttribute="top" id="3BC-ns-8ij"/>
                             <constraint firstItem="oTH-IP-4aF" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="4e3-dF-lIF"/>
                             <constraint firstItem="qxg-Dg-PT3" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="AH0-vj-7Qf"/>
                             <constraint firstItem="P4Q-MO-SwN" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="BQl-ag-v2g"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="Cbn-Le-YwQ"/>
                             <constraint firstItem="qxg-Dg-PT3" firstAttribute="top" secondItem="ZQo-LF-G18" secondAttribute="bottom" constant="8" id="GZv-TW-3Fd"/>
                             <constraint firstItem="qxg-Dg-PT3" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="J1m-87-5Wt"/>
                             <constraint firstItem="oTH-IP-4aF" firstAttribute="top" secondItem="qxg-Dg-PT3" secondAttribute="bottom" constant="8" id="MvY-WP-w56"/>
                             <constraint firstItem="P4Q-MO-SwN" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="PSZ-W9-vD8"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="bottom" secondItem="iPG-KX-1OP" secondAttribute="bottom" id="SEO-Wn-kg2"/>
+                            <constraint firstItem="u2d-sj-oNi" firstAttribute="top" secondItem="P4Q-MO-SwN" secondAttribute="bottom" constant="8" id="Sjk-el-ASg"/>
                             <constraint firstItem="9c5-ch-p1U" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="T1N-g3-OAb"/>
                             <constraint firstItem="P4Q-MO-SwN" firstAttribute="top" secondItem="9c5-ch-p1U" secondAttribute="bottom" constant="8" id="XFF-lU-42e"/>
                             <constraint firstItem="8eP-zx-IdO" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="Y99-8q-IU3"/>
@@ -108,10 +122,9 @@
                             <constraint firstItem="K2f-S2-3vE" firstAttribute="top" secondItem="8eP-zx-IdO" secondAttribute="bottom" constant="8" id="jkS-uf-MbM"/>
                             <constraint firstItem="oTH-IP-4aF" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="kZl-ZR-Cfy"/>
                             <constraint firstItem="K2f-S2-3vE" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="pPB-cm-Q7j"/>
-                            <constraint firstItem="8eP-zx-IdO" firstAttribute="top" secondItem="iPG-KX-1OP" secondAttribute="top" id="qJB-so-EF8"/>
-                            <constraint firstItem="u2d-sj-oNi" firstAttribute="top" secondItem="P4Q-MO-SwN" secondAttribute="bottom" constant="8" id="t3Y-GB-AMk"/>
                             <constraint firstItem="ZQo-LF-G18" firstAttribute="top" secondItem="K2f-S2-3vE" secondAttribute="bottom" constant="8" id="tsC-v0-R0a"/>
                             <constraint firstItem="u2d-sj-oNi" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="v9S-OE-PwR"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="ylA-iW-uPi"/>
                             <constraint firstItem="9c5-ch-p1U" firstAttribute="top" secondItem="oTH-IP-4aF" secondAttribute="bottom" constant="8" id="zMw-uI-s0y"/>
                             <constraint firstItem="8eP-zx-IdO" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="zQ2-Rv-ZnK"/>
                             <constraint firstItem="ZQo-LF-G18" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="zS6-hZ-NDd"/>
@@ -131,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kce-Vf-XbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="134"/>
+            <point key="canvasLocation" x="821.60000000000002" y="133.5832083958021"/>
         </scene>
         <!--The Gas Laws-->
         <scene sceneID="qdW-7g-Vp8">
@@ -145,11 +158,11 @@
                                 <rect key="frame" x="16" y="84" width="343" height="573"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="particles" translatesAutoresizingMaskIntoConstraints="NO" id="BEw-jl-KPP">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="271"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="272"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-ZM-XjK">
                                         <rect key="frame" x="113" y="0.0" width="230" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" Avogadro "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -162,7 +175,7 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRQ-Iy-9Cq">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" Boyle "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -175,7 +188,7 @@
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-4b-6u0">
                                         <rect key="frame" x="0.0" y="62" width="138" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" Charles "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -188,7 +201,7 @@
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDk-Fv-N85">
                                         <rect key="frame" x="144" y="124" width="199" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" Gay Lussac "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -201,7 +214,7 @@
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvb-vW-kk2">
                                         <rect key="frame" x="0.0" y="124" width="136" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" P / n "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -214,7 +227,7 @@
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-Xw-EM2">
                                         <rect key="frame" x="146" y="62" width="197" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" T * n "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -226,8 +239,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LuC-eO-aW5">
-                                        <rect key="frame" x="0.0" y="186" width="343" height="39"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="19"/>
+                                        <rect key="frame" x="0.0" y="186" width="343" height="40"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="20"/>
                                         <state key="normal" title="Dalton's Law of Partial Pressures">
                                             <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -241,7 +254,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5N0-gd-6O2">
-                                        <rect key="frame" x="150" y="233" width="193" height="54"/>
+                                        <rect key="frame" x="150" y="234" width="193" height="54"/>
                                         <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" Overview ">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -256,10 +269,10 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test tube" translatesAutoresizingMaskIntoConstraints="NO" id="B3p-a5-B8b">
-                                        <rect key="frame" x="0.0" y="287" width="343" height="286"/>
+                                        <rect key="frame" x="0.0" y="288" width="343" height="285"/>
                                     </imageView>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bD5-uq-nuj">
-                                        <rect key="frame" x="0.0" y="233" width="142" height="54"/>
+                                        <rect key="frame" x="0.0" y="234" width="142" height="54"/>
                                         <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
                                         <state key="normal" title=" General ">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -343,7 +356,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAT-cN-ii0">
-                                <rect key="frame" x="16" y="439" width="343" height="53"/>
+                                <rect key="frame" x="16" y="394" width="343" height="53"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kept Constant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-QL-Qtz">
                                         <rect key="frame" x="99.5" y="0.0" width="144" height="27"/>
@@ -368,7 +381,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCv-zZ-QOZ">
-                                <rect key="frame" x="16" y="500" width="343" height="218"/>
+                                <rect key="frame" x="16" y="455" width="343" height="218"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View DIRECT Relationship:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-w2-gR8">
                                         <rect key="frame" x="1" y="0.0" width="342" height="34"/>
@@ -456,8 +469,8 @@
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="qAT-cN-ii0" secondAttribute="trailing" constant="16" id="deb-nr-SVD"/>
                             <constraint firstItem="qAT-cN-ii0" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="16" id="jYx-Yw-Jqo"/>
                             <constraint firstItem="CCv-zZ-QOZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="16" id="pvK-Rf-O6i"/>
-                            <constraint firstItem="qAT-cN-ii0" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" constant="375" id="th5-lT-LfG"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="CCv-zZ-QOZ" secondAttribute="trailing" constant="16" id="wfm-TZ-sfq"/>
+                            <constraint firstItem="qAT-cN-ii0" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="330" id="xHb-TG-fFP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
@@ -568,7 +581,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-mp-ye0">
-                                <rect key="frame" x="58" y="439" width="258" height="224"/>
+                                <rect key="frame" x="58" y="394" width="258" height="224"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYi-YE-BEd">
                                         <rect key="frame" x="8" y="8" width="49" height="31"/>
@@ -681,9 +694,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uto-L6-xPt">
-                                <rect key="frame" x="16" y="671" width="343" height="33"/>
+                                <rect key="frame" x="16" y="626" width="343" height="33"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.00 atm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mie-1d-hOh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.00 atm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mie-1d-hOh">
                                         <rect key="frame" x="8" y="8" width="71" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -713,8 +726,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80852961897170661" blue="0.88533596629709788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0mP-mp-ye0" firstAttribute="top" secondItem="ccY-1a-57V" secondAttribute="topMargin" constant="375" id="5CX-NB-p4g"/>
                             <constraint firstItem="0mP-mp-ye0" firstAttribute="centerX" secondItem="ccY-1a-57V" secondAttribute="centerX" id="BXI-Fj-kND"/>
+                            <constraint firstItem="0mP-mp-ye0" firstAttribute="top" secondItem="2ZH-cw-Qhp" secondAttribute="top" constant="330" id="Brj-cH-KUG"/>
                             <constraint firstItem="uto-L6-xPt" firstAttribute="top" secondItem="0mP-mp-ye0" secondAttribute="bottom" constant="8" id="CRO-e0-mYS"/>
                             <constraint firstItem="uto-L6-xPt" firstAttribute="centerX" secondItem="ccY-1a-57V" secondAttribute="centerX" id="XIS-sU-jsZ"/>
                         </constraints>

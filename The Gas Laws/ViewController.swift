@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     //========================================
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Euphemia UCAS", size: 18)!]
+        
         daltonsLaw.titleLabel?.textAlignment = .center
     }
     

@@ -158,15 +158,19 @@
                                 <rect key="frame" x="16" y="84" width="343" height="573"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="particles" translatesAutoresizingMaskIntoConstraints="NO" id="BEw-jl-KPP">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="272"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="256"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ld-ZM-XjK">
-                                        <rect key="frame" x="113" y="0.0" width="230" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" Avogadro "/>
+                                        <rect key="frame" x="147" y="8" width="188" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="21"/>
+                                        <state key="normal" title=" Avogadro's Law  "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -174,12 +178,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRQ-Iy-9Cq">
-                                        <rect key="frame" x="0.0" y="0.0" width="105" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" Boyle "/>
+                                        <rect key="frame" x="8" y="8" width="131" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                        <state key="normal" title=" Boyle's Law "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -187,12 +195,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-4b-6u0">
-                                        <rect key="frame" x="0.0" y="62" width="138" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" Charles "/>
+                                        <rect key="frame" x="8" y="63" width="157" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="21"/>
+                                        <state key="normal" title=" Charles's Law "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -200,12 +212,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDk-Fv-N85">
-                                        <rect key="frame" x="144" y="124" width="199" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" Gay Lussac "/>
+                                        <rect key="frame" x="156" y="118" width="179" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="19"/>
+                                        <state key="normal" title=" Gay Lussac's Law "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -213,12 +229,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvb-vW-kk2">
-                                        <rect key="frame" x="0.0" y="124" width="136" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" P / n "/>
+                                        <rect key="frame" x="8" y="118" width="140" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="21"/>
+                                        <state key="normal" title=" P / n Law "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -226,12 +246,16 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqw-Xw-EM2">
-                                        <rect key="frame" x="146" y="62" width="197" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="30"/>
-                                        <state key="normal" title=" T * n "/>
+                                        <rect key="frame" x="173" y="63" width="162" height="47"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="26"/>
+                                        <state key="normal" title=" T * n Law "/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -239,8 +263,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LuC-eO-aW5">
-                                        <rect key="frame" x="0.0" y="186" width="343" height="40"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="20"/>
+                                        <rect key="frame" x="8" y="173" width="327" height="39"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
                                         <state key="normal" title="Dalton's Law of Partial Pressures">
                                             <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -248,14 +273,18 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="T4J-kX-6sx" kind="show" animates="NO" id="ihe-yF-dSo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5N0-gd-6O2">
-                                        <rect key="frame" x="150" y="234" width="193" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <rect key="frame" x="152" y="220" width="183" height="52"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                         <state key="normal" title=" Overview ">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -263,17 +292,21 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="spo-is-JXH" kind="show" id="vWg-Sd-wG3"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test tube" translatesAutoresizingMaskIntoConstraints="NO" id="B3p-a5-B8b">
-                                        <rect key="frame" x="0.0" y="288" width="343" height="285"/>
+                                        <rect key="frame" x="0.0" y="272" width="343" height="301"/>
                                     </imageView>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bD5-uq-nuj">
-                                        <rect key="frame" x="0.0" y="234" width="142" height="54"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="30"/>
+                                        <rect key="frame" x="8" y="220" width="136" height="52"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.64086579623287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="30"/>
                                         <state key="normal" title=" General ">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -281,54 +314,71 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="7FG-Vd-fg2" kind="show" id="rDf-as-czl"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="B3p-a5-B8b" secondAttribute="bottom" id="06c-1u-7IH"/>
-                                    <constraint firstItem="Jvb-vW-kk2" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="1cS-da-psb"/>
+                                    <constraint firstItem="Jvb-vW-kk2" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" constant="8" id="1cS-da-psb"/>
                                     <constraint firstItem="Jvb-vW-kk2" firstAttribute="top" secondItem="k3G-4b-6u0" secondAttribute="bottom" constant="8" id="2cf-XP-OZG"/>
                                     <constraint firstItem="LuC-eO-aW5" firstAttribute="top" secondItem="YDk-Fv-N85" secondAttribute="bottom" constant="8" id="2ui-rC-ogU"/>
-                                    <constraint firstItem="bD5-uq-nuj" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="5rB-Y6-abT"/>
+                                    <constraint firstItem="bD5-uq-nuj" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" constant="8" id="5rB-Y6-abT"/>
                                     <constraint firstItem="k3G-4b-6u0" firstAttribute="top" secondItem="2ld-ZM-XjK" secondAttribute="bottom" constant="8" id="8gh-lk-Aw9"/>
-                                    <constraint firstAttribute="trailing" secondItem="5N0-gd-6O2" secondAttribute="trailing" id="A8h-Bc-pC4"/>
+                                    <constraint firstItem="k3G-4b-6u0" firstAttribute="height" secondItem="MRQ-Iy-9Cq" secondAttribute="height" id="9Vs-Ln-PA0"/>
+                                    <constraint firstAttribute="trailing" secondItem="5N0-gd-6O2" secondAttribute="trailing" constant="8" id="A8h-Bc-pC4"/>
                                     <constraint firstItem="B3p-a5-B8b" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="BLe-v0-QtV"/>
                                     <constraint firstItem="YDk-Fv-N85" firstAttribute="top" secondItem="Rqw-Xw-EM2" secondAttribute="bottom" constant="8" id="Gyy-jj-sSU"/>
                                     <constraint firstItem="B3p-a5-B8b" firstAttribute="top" secondItem="BEw-jl-KPP" secondAttribute="bottom" constant="16" id="HWW-7H-F2T"/>
                                     <constraint firstItem="YDk-Fv-N85" firstAttribute="leading" secondItem="Jvb-vW-kk2" secondAttribute="trailing" constant="8" id="MWf-ue-BEi"/>
-                                    <constraint firstAttribute="trailing" secondItem="LuC-eO-aW5" secondAttribute="trailing" id="O5v-aO-hPs"/>
+                                    <constraint firstAttribute="trailing" secondItem="LuC-eO-aW5" secondAttribute="trailing" constant="8" id="O5v-aO-hPs"/>
                                     <constraint firstItem="5N0-gd-6O2" firstAttribute="leading" secondItem="bD5-uq-nuj" secondAttribute="trailing" constant="8" id="O7I-fD-T9d"/>
-                                    <constraint firstAttribute="trailing" secondItem="2ld-ZM-XjK" secondAttribute="trailing" id="P90-wk-7pG"/>
+                                    <constraint firstItem="Rqw-Xw-EM2" firstAttribute="height" secondItem="MRQ-Iy-9Cq" secondAttribute="height" id="Oec-Wj-4Pk"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ld-ZM-XjK" secondAttribute="trailing" constant="8" id="P90-wk-7pG"/>
                                     <constraint firstItem="B3p-a5-B8b" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="Pgr-Lb-jA0"/>
-                                    <constraint firstItem="MRQ-Iy-9Cq" firstAttribute="top" secondItem="UA0-Id-gXa" secondAttribute="top" id="Q5f-tP-M7F"/>
-                                    <constraint firstAttribute="trailing" secondItem="YDk-Fv-N85" secondAttribute="trailing" id="TG9-FU-Jy9"/>
-                                    <constraint firstItem="MRQ-Iy-9Cq" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="Tb2-MN-6hO"/>
+                                    <constraint firstItem="MRQ-Iy-9Cq" firstAttribute="top" secondItem="UA0-Id-gXa" secondAttribute="top" constant="8" id="Q5f-tP-M7F"/>
+                                    <constraint firstItem="YDk-Fv-N85" firstAttribute="height" secondItem="MRQ-Iy-9Cq" secondAttribute="height" id="RMC-Wc-pnF"/>
+                                    <constraint firstAttribute="trailing" secondItem="YDk-Fv-N85" secondAttribute="trailing" constant="8" id="TG9-FU-Jy9"/>
+                                    <constraint firstItem="MRQ-Iy-9Cq" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" constant="8" id="Tb2-MN-6hO"/>
                                     <constraint firstAttribute="trailing" secondItem="B3p-a5-B8b" secondAttribute="trailing" id="UWN-Tq-bwp"/>
-                                    <constraint firstItem="2ld-ZM-XjK" firstAttribute="top" secondItem="UA0-Id-gXa" secondAttribute="top" id="VcL-bJ-KV7"/>
+                                    <constraint firstItem="2ld-ZM-XjK" firstAttribute="height" secondItem="MRQ-Iy-9Cq" secondAttribute="height" id="VIM-ZH-aw5"/>
+                                    <constraint firstItem="2ld-ZM-XjK" firstAttribute="top" secondItem="UA0-Id-gXa" secondAttribute="top" constant="8" id="VcL-bJ-KV7"/>
                                     <constraint firstItem="5N0-gd-6O2" firstAttribute="top" secondItem="LuC-eO-aW5" secondAttribute="bottom" constant="8" id="Vdc-Zh-xse"/>
                                     <constraint firstItem="BEw-jl-KPP" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="ZxA-ad-deE"/>
                                     <constraint firstItem="bD5-uq-nuj" firstAttribute="top" secondItem="LuC-eO-aW5" secondAttribute="bottom" constant="8" id="aeW-g8-NPz"/>
                                     <constraint firstItem="BEw-jl-KPP" firstAttribute="top" secondItem="UA0-Id-gXa" secondAttribute="top" id="awQ-Jz-9LE"/>
-                                    <constraint firstItem="LuC-eO-aW5" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="b03-Xj-FQG"/>
+                                    <constraint firstItem="LuC-eO-aW5" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" constant="8" id="b03-Xj-FQG"/>
                                     <constraint firstItem="B3p-a5-B8b" firstAttribute="top" secondItem="bD5-uq-nuj" secondAttribute="bottom" id="cO5-uz-qUi"/>
                                     <constraint firstItem="Rqw-Xw-EM2" firstAttribute="leading" secondItem="k3G-4b-6u0" secondAttribute="trailing" constant="8" id="cvc-da-2DU"/>
                                     <constraint firstItem="2ld-ZM-XjK" firstAttribute="leading" secondItem="MRQ-Iy-9Cq" secondAttribute="trailing" constant="8" id="dN8-rT-Joj"/>
+                                    <constraint firstItem="Jvb-vW-kk2" firstAttribute="height" secondItem="MRQ-Iy-9Cq" secondAttribute="height" id="fJY-qr-Z1Z"/>
                                     <constraint firstItem="k3G-4b-6u0" firstAttribute="top" secondItem="MRQ-Iy-9Cq" secondAttribute="bottom" constant="8" id="jKK-WF-Yy7"/>
-                                    <constraint firstItem="k3G-4b-6u0" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" id="juh-j0-aej"/>
+                                    <constraint firstItem="k3G-4b-6u0" firstAttribute="leading" secondItem="UA0-Id-gXa" secondAttribute="leading" constant="8" id="juh-j0-aej"/>
                                     <constraint firstItem="B3p-a5-B8b" firstAttribute="top" secondItem="5N0-gd-6O2" secondAttribute="bottom" id="k4I-MA-gNz"/>
                                     <constraint firstAttribute="bottom" secondItem="B3p-a5-B8b" secondAttribute="bottom" id="mUU-Iv-w2M"/>
                                     <constraint firstItem="Rqw-Xw-EM2" firstAttribute="top" secondItem="2ld-ZM-XjK" secondAttribute="bottom" constant="8" id="oa2-pM-aEQ"/>
                                     <constraint firstAttribute="trailing" secondItem="B3p-a5-B8b" secondAttribute="trailing" id="rns-Qf-7ua"/>
                                     <constraint firstItem="LuC-eO-aW5" firstAttribute="top" secondItem="Jvb-vW-kk2" secondAttribute="bottom" constant="8" id="sDl-XR-a1w"/>
                                     <constraint firstAttribute="trailing" secondItem="BEw-jl-KPP" secondAttribute="trailing" id="x7O-Yh-A3G"/>
-                                    <constraint firstAttribute="trailing" secondItem="Rqw-Xw-EM2" secondAttribute="trailing" id="zzw-5X-UHU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rqw-Xw-EM2" secondAttribute="trailing" constant="8" id="zzw-5X-UHU"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.69121748208999634" green="0.9337039589881897" blue="0.70200061798095703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UA0-Id-gXa" firstAttribute="leading" secondItem="urR-bN-8ux" secondAttribute="leading" constant="16" id="2cO-yE-8JO"/>
                             <constraint firstItem="UA0-Id-gXa" firstAttribute="top" secondItem="urR-bN-8ux" secondAttribute="top" constant="20" id="5Aa-gT-pKU"/>
@@ -758,6 +808,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P6J-be-4Ed">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.69121748208999634" green="0.9337039589881897" blue="0.70200061798095703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -774,6 +828,6 @@
         <image name="test tube" width="734" height="1004"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1VM-mT-jnx"/>
+        <segue reference="DCS-4y-BVy"/>
     </inferredMetricsTieBreakers>
 </document>

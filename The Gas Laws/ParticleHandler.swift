@@ -60,7 +60,8 @@ class ParticleHandler: NSObject {
             particle.physicsBody?.velocity = CGVector(dx: speed*cos(randomAngle()), dy: speed*sin(randomAngle()))
             
             particleArray.append(particle)
-            toGame.addChild(particle)
+            //toGame.addChild(particle)
+            toGame.insertChild(particle, at: 0)
         }
     }
     

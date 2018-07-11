@@ -33,6 +33,9 @@ class PartialViewController: UIViewController {
         minATM.minimumScaleFactor = 0.1
         minATM.adjustsFontSizeToFitWidth = true
         
+        maxATM.minimumScaleFactor = 0.1
+        maxATM.adjustsFontSizeToFitWidth = true
+        
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -46,13 +49,11 @@ class PartialViewController: UIViewController {
                 currentGame = scene as! GameScene
                 currentGame.title.text = "Dalton's Law"
             }
-            
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
-        
         
         allLabels.append(blueLabel)
         allLabels.append(greenLabel)
@@ -129,18 +130,6 @@ class PartialViewController: UIViewController {
         return (max+min)/2 + zScore
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     //=====================//
     // AUTOMATED FUNCTIONS //
     //=====================//
@@ -165,8 +154,4 @@ class PartialViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-//    @IBAction func onTappedBack(_ sender: Any) {
-//        performSegue(withIdentifier: "unwindSegue", sender: self)
-//    }
 }

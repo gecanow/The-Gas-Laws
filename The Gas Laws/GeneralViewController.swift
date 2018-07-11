@@ -17,9 +17,12 @@ class GeneralViewController: UIViewController {
     
     @IBOutlet weak var lowLabel: UILabel!
     @IBOutlet weak var highLabel: UILabel!
+    @IBOutlet weak var segment: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let attribute = [NSAttributedStringKey.font: UIFont(name: "Thonburi", size: 12)!]
+        segment.setTitleTextAttributes(attribute, for: .normal)
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -37,8 +40,8 @@ class GeneralViewController: UIViewController {
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
     

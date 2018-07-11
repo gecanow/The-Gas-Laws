@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     // Slider possibilities (arranged based on slider tags)
     let sliders = [["V", "n", "/"], ["P", "V", "*"], ["V", "T", "/"], ["P", "T", "/"], ["P", "n", "/"], ["T", "n", "*"]]
-    let titles = ["Avogadro's Law", "Boyle's Law", "Charle's Law", "Guy Lussac's Law", "P / n Law", "T * n Law"]
+    let titles = ["Avogadro's Law", "Boyle's Law", "Charles's Law", "Guy Lussac's Law", "P / n Law", "T * n Law"]
     
     //========================================
     // VIEW DID LOAD
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         let attribute = [NSAttributedStringKey.font: UIFont(name: "Thonburi", size: 18)!]
         self.navigationController?.navigationBar.titleTextAttributes = attribute
-        UIBarButtonItem.appearance().setTitleTextAttributes(attribute, for: .normal)
+        self.navigationController?.navigationItem.backBarButtonItem?.setTitleTextAttributes(attribute, for: .normal)
         
         daltonsLaw.titleLabel?.textAlignment = .center
     }

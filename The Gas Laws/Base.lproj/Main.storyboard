@@ -18,56 +18,137 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avogadro's Law: V / n is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eP-zx-IdO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boyles's Law: P * n is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-S2-3vE">
-                                <rect key="frame" x="0.0" y="129.5" width="375" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avogadro's Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eP-zx-IdO">
+                                <rect key="frame" x="8" y="72" width="169" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="YHA-Wv-dMx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charles's Law: V / T is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-LF-G18">
-                                <rect key="frame" x="0.0" y="195.5" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="19"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="V / n is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vi-7H-Rdr">
+                                <rect key="frame" x="185" y="72" width="182" height="57"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Boyles's Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2f-S2-3vE">
+                                <rect key="frame" x="8" y="137" width="169" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guy Lussac's Law: P / T is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxg-Dg-PT3">
-                                <rect key="frame" x="0.0" y="261" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P * n is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv3-fO-kfa">
+                                <rect key="frame" x="185" y="137" width="182" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charles's Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-LF-G18">
+                                <rect key="frame" x="8.5" y="202" width="169" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P / n Law: P / n is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-IP-4aF">
-                                <rect key="frame" x="0.0" y="326.5" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V / T is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyW-gU-y8w">
+                                <rect key="frame" x="186" y="202" width="181" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Guy Lussac's Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxg-Dg-PT3">
+                                <rect key="frame" x="8" y="266.5" width="169" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T * n Law: T * n is a constant." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-ch-p1U">
-                                <rect key="frame" x="0.0" y="392" width="375" height="58"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P / T is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBQ-oJ-liS">
+                                <rect key="frame" x="185" y="266.5" width="182" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P / n Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTH-IP-4aF">
+                                <rect key="frame" x="8" y="331" width="169" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dalton's Law: P(total) = P₁ + P₂ + P₃" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4Q-MO-SwN">
-                                <rect key="frame" x="0.0" y="458" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="P / n is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-ot-iv2">
+                                <rect key="frame" x="185" y="331" width="182" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="T * n Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c5-ch-p1U">
+                                <rect key="frame" x="8" y="396" width="169" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ideal Gas Law Law: PV = nRT" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2d-sj-oNi">
-                                <rect key="frame" x="0.0" y="523.5" width="375" height="57.5"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dalton's Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4Q-MO-SwN">
+                                <rect key="frame" x="8" y="461" width="169" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="P(total) = P₁ + P₂ + P₃" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36k-cD-OFP">
+                                <rect key="frame" x="185" y="461" width="182" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Ideal Gas Law:" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2d-sj-oNi">
+                                <rect key="frame" x="8" y="525.5" width="169" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PV = nRT" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2L-E8-f1w">
+                                <rect key="frame" x="185" y="525.5" width="182" height="56.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where P is pressure, V is volume, n is moles, and T is temperature" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utj-3w-trt">
-                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <rect key="frame" x="-1" y="598" width="375" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="lSo-iK-IWu"/>
                                 </constraints>
@@ -80,46 +161,94 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T * n is a constant." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auq-2M-6Zm">
+                                <rect key="frame" x="185" y="396" width="183" height="57"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Sv3-fO-kfa" firstAttribute="leading" secondItem="K2f-S2-3vE" secondAttribute="trailing" constant="8" id="0BK-3c-V5Y"/>
                             <constraint firstItem="oTH-IP-4aF" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="1Xl-WQ-GjW"/>
-                            <constraint firstItem="8eP-zx-IdO" firstAttribute="top" secondItem="iPG-KX-1OP" secondAttribute="top" id="3BC-ns-8ij"/>
-                            <constraint firstItem="oTH-IP-4aF" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="4e3-dF-lIF"/>
-                            <constraint firstItem="qxg-Dg-PT3" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="AH0-vj-7Qf"/>
-                            <constraint firstItem="P4Q-MO-SwN" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="BQl-ag-v2g"/>
+                            <constraint firstAttribute="trailing" secondItem="vBQ-oJ-liS" secondAttribute="trailing" constant="8" id="1jg-j0-XeE"/>
+                            <constraint firstItem="8eP-zx-IdO" firstAttribute="top" secondItem="iPG-KX-1OP" secondAttribute="top" constant="8" id="3BC-ns-8ij"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="v2L-E8-f1w" secondAttribute="trailing" constant="8" id="4zB-ql-D6j"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="36k-cD-OFP" secondAttribute="trailing" constant="8" id="6ea-EH-vVt"/>
+                            <constraint firstItem="qxg-Dg-PT3" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="9X6-MR-hwk"/>
+                            <constraint firstItem="K2f-S2-3vE" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="AD1-I8-t8W"/>
+                            <constraint firstItem="qxg-Dg-PT3" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="AH0-vj-7Qf"/>
                             <constraint firstItem="qxg-Dg-PT3" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="Bhy-4m-osl"/>
-                            <constraint firstItem="Utj-3w-trt" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="Cbn-Le-YwQ"/>
+                            <constraint firstItem="3vi-7H-Rdr" firstAttribute="leading" secondItem="8eP-zx-IdO" secondAttribute="trailing" constant="8" id="Dmr-TK-Lvu"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="kCc-ot-iv2" secondAttribute="trailing" constant="8" id="G5O-j7-e2P"/>
+                            <constraint firstItem="Sv3-fO-kfa" firstAttribute="top" secondItem="3vi-7H-Rdr" secondAttribute="bottom" constant="8" id="GNK-Mw-tuP"/>
                             <constraint firstItem="qxg-Dg-PT3" firstAttribute="top" secondItem="ZQo-LF-G18" secondAttribute="bottom" constant="8" id="GZv-TW-3Fd"/>
+                            <constraint firstItem="zyW-gU-y8w" firstAttribute="leading" secondItem="ZQo-LF-G18" secondAttribute="trailing" constant="8" id="Gxl-G1-15R"/>
+                            <constraint firstItem="9c5-ch-p1U" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="HPv-BI-2cT"/>
                             <constraint firstItem="K2f-S2-3vE" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="II8-Hj-Qhl"/>
-                            <constraint firstItem="qxg-Dg-PT3" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="J1m-87-5Wt"/>
+                            <constraint firstItem="auq-2M-6Zm" firstAttribute="top" secondItem="kCc-ot-iv2" secondAttribute="bottom" constant="8" id="IYT-yd-YcS"/>
                             <constraint firstItem="Utj-3w-trt" firstAttribute="top" secondItem="u2d-sj-oNi" secondAttribute="bottom" constant="16" id="J48-Su-d00"/>
+                            <constraint firstItem="auq-2M-6Zm" firstAttribute="leading" secondItem="9c5-ch-p1U" secondAttribute="trailing" constant="8" id="Je7-8G-6bc"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="auq-2M-6Zm" secondAttribute="trailing" constant="7" id="K1x-fi-l0S"/>
+                            <constraint firstItem="K2f-S2-3vE" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="KTJ-b5-KRM"/>
+                            <constraint firstItem="P4Q-MO-SwN" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="Lqr-jz-10R"/>
+                            <constraint firstItem="36k-cD-OFP" firstAttribute="top" secondItem="auq-2M-6Zm" secondAttribute="bottom" constant="8" id="M95-Ds-p4W"/>
+                            <constraint firstItem="kCc-ot-iv2" firstAttribute="height" secondItem="oTH-IP-4aF" secondAttribute="height" id="MNQ-87-jXG"/>
                             <constraint firstItem="oTH-IP-4aF" firstAttribute="top" secondItem="qxg-Dg-PT3" secondAttribute="bottom" constant="8" id="MvY-WP-w56"/>
+                            <constraint firstItem="oTH-IP-4aF" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="O6R-G7-Xhf"/>
                             <constraint firstItem="u2d-sj-oNi" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="OGU-3f-mkX"/>
                             <constraint firstItem="P4Q-MO-SwN" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="PRs-Z6-ohe"/>
-                            <constraint firstItem="P4Q-MO-SwN" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="PSZ-W9-vD8"/>
-                            <constraint firstItem="Utj-3w-trt" firstAttribute="bottom" secondItem="iPG-KX-1OP" secondAttribute="bottom" id="SEO-Wn-kg2"/>
+                            <constraint firstItem="P4Q-MO-SwN" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="PSZ-W9-vD8"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="top" secondItem="v2L-E8-f1w" secondAttribute="bottom" constant="16" id="Sii-we-RhW"/>
                             <constraint firstItem="u2d-sj-oNi" firstAttribute="top" secondItem="P4Q-MO-SwN" secondAttribute="bottom" constant="8" id="Sjk-el-ASg"/>
-                            <constraint firstItem="9c5-ch-p1U" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="T1N-g3-OAb"/>
+                            <constraint firstItem="u2d-sj-oNi" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="T5W-5x-e6D"/>
+                            <constraint firstItem="vBQ-oJ-liS" firstAttribute="leading" secondItem="qxg-Dg-PT3" secondAttribute="trailing" constant="8" id="TKP-9U-ioV"/>
+                            <constraint firstItem="vBQ-oJ-liS" firstAttribute="top" secondItem="zyW-gU-y8w" secondAttribute="bottom" constant="8" id="Vht-OX-mIk"/>
                             <constraint firstItem="P4Q-MO-SwN" firstAttribute="top" secondItem="9c5-ch-p1U" secondAttribute="bottom" constant="8" id="XFF-lU-42e"/>
-                            <constraint firstItem="8eP-zx-IdO" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="Y99-8q-IU3"/>
-                            <constraint firstItem="K2f-S2-3vE" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="acp-AS-mwi"/>
-                            <constraint firstItem="9c5-ch-p1U" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="cbg-M5-jb5"/>
+                            <constraint firstItem="kCc-ot-iv2" firstAttribute="top" secondItem="vBQ-oJ-liS" secondAttribute="bottom" constant="8" id="XR9-Cl-I6v"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="bottom" secondItem="Utj-3w-trt" secondAttribute="bottom" constant="-1" id="YpK-Yc-oR1"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="zyW-gU-y8w" secondAttribute="trailing" constant="8" id="ZhW-mf-fFM"/>
+                            <constraint firstItem="9c5-ch-p1U" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="cbg-M5-jb5"/>
+                            <constraint firstItem="3vi-7H-Rdr" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="eLm-v5-oid"/>
+                            <constraint firstItem="zyW-gU-y8w" firstAttribute="height" secondItem="ZQo-LF-G18" secondAttribute="height" id="fTM-ej-OvL"/>
                             <constraint firstItem="9c5-ch-p1U" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="gEF-eo-2Ro"/>
-                            <constraint firstItem="u2d-sj-oNi" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="goh-SP-WdD"/>
+                            <constraint firstItem="Sv3-fO-kfa" firstAttribute="height" secondItem="K2f-S2-3vE" secondAttribute="height" id="gV9-UB-RZr"/>
+                            <constraint firstItem="36k-cD-OFP" firstAttribute="height" secondItem="P4Q-MO-SwN" secondAttribute="height" id="gXJ-xF-Luo"/>
                             <constraint firstItem="ZQo-LF-G18" firstAttribute="height" secondItem="8eP-zx-IdO" secondAttribute="height" id="heu-cg-Tgl"/>
-                            <constraint firstItem="ZQo-LF-G18" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="iTX-eJ-Awu"/>
+                            <constraint firstItem="zyW-gU-y8w" firstAttribute="top" secondItem="Sv3-fO-kfa" secondAttribute="bottom" constant="8" id="iNd-sj-EbP"/>
+                            <constraint firstItem="ZQo-LF-G18" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="iTX-eJ-Awu"/>
+                            <constraint firstItem="36k-cD-OFP" firstAttribute="leading" secondItem="P4Q-MO-SwN" secondAttribute="trailing" constant="8" id="irg-5v-DnR"/>
+                            <constraint firstItem="3vi-7H-Rdr" firstAttribute="top" secondItem="iPG-KX-1OP" secondAttribute="top" constant="8" id="jEf-Mp-DP9"/>
+                            <constraint firstItem="ZQo-LF-G18" firstAttribute="width" secondItem="8eP-zx-IdO" secondAttribute="width" id="jFo-AM-z3d"/>
                             <constraint firstItem="K2f-S2-3vE" firstAttribute="top" secondItem="8eP-zx-IdO" secondAttribute="bottom" constant="8" id="jkS-uf-MbM"/>
-                            <constraint firstItem="oTH-IP-4aF" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="kZl-ZR-Cfy"/>
-                            <constraint firstItem="K2f-S2-3vE" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="pPB-cm-Q7j"/>
+                            <constraint firstItem="oTH-IP-4aF" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="kZl-ZR-Cfy"/>
+                            <constraint firstItem="iPG-KX-1OP" firstAttribute="trailing" secondItem="3vi-7H-Rdr" secondAttribute="trailing" constant="8" id="ohL-zF-ETt"/>
+                            <constraint firstItem="v2L-E8-f1w" firstAttribute="top" secondItem="36k-cD-OFP" secondAttribute="bottom" constant="8" id="pRd-OY-2IJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Sv3-fO-kfa" secondAttribute="trailing" constant="8" id="qSO-9b-Hd7"/>
+                            <constraint firstItem="K2f-S2-3vE" firstAttribute="centerX" secondItem="ZQo-LF-G18" secondAttribute="centerX" id="szm-3w-kx3"/>
                             <constraint firstItem="ZQo-LF-G18" firstAttribute="top" secondItem="K2f-S2-3vE" secondAttribute="bottom" constant="8" id="tsC-v0-R0a"/>
-                            <constraint firstItem="u2d-sj-oNi" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="v9S-OE-PwR"/>
-                            <constraint firstItem="Utj-3w-trt" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="ylA-iW-uPi"/>
+                            <constraint firstItem="v2L-E8-f1w" firstAttribute="height" secondItem="u2d-sj-oNi" secondAttribute="height" id="uSC-Xc-Xh2"/>
+                            <constraint firstItem="kCc-ot-iv2" firstAttribute="leading" secondItem="oTH-IP-4aF" secondAttribute="trailing" constant="8" id="udv-XN-hhx"/>
+                            <constraint firstItem="u2d-sj-oNi" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="v9S-OE-PwR"/>
+                            <constraint firstItem="v2L-E8-f1w" firstAttribute="leading" secondItem="u2d-sj-oNi" secondAttribute="trailing" constant="8" id="vaA-1q-Kk7"/>
+                            <constraint firstItem="vBQ-oJ-liS" firstAttribute="height" secondItem="qxg-Dg-PT3" secondAttribute="height" id="wJC-Dk-I59"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" constant="-1" id="xzA-Qy-yGQ"/>
                             <constraint firstItem="9c5-ch-p1U" firstAttribute="top" secondItem="oTH-IP-4aF" secondAttribute="bottom" constant="8" id="zMw-uI-s0y"/>
-                            <constraint firstItem="8eP-zx-IdO" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" id="zQ2-Rv-ZnK"/>
-                            <constraint firstItem="ZQo-LF-G18" firstAttribute="trailing" secondItem="iPG-KX-1OP" secondAttribute="trailing" id="zS6-hZ-NDd"/>
+                            <constraint firstItem="8eP-zx-IdO" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="8" id="zQ2-Rv-ZnK"/>
+                            <constraint firstItem="auq-2M-6Zm" firstAttribute="height" secondItem="9c5-ch-p1U" secondAttribute="height" id="zeP-GC-u34"/>
+                            <constraint firstItem="Utj-3w-trt" firstAttribute="leading" secondItem="iPG-KX-1OP" secondAttribute="leading" constant="-1" id="zpM-Gy-LMM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iPG-KX-1OP"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vue-fK-85B" appends="YES" id="5ul-50-sKf"/>
+                        </connections>
                     </view>
                     <connections>
                         <outletCollection property="lawDescriptions" destination="u2d-sj-oNi" collectionClass="NSMutableArray" id="Kv7-WF-Va2"/>
@@ -130,9 +259,22 @@
                         <outletCollection property="lawDescriptions" destination="ZQo-LF-G18" collectionClass="NSMutableArray" id="E3g-dw-FAh"/>
                         <outletCollection property="lawDescriptions" destination="K2f-S2-3vE" collectionClass="NSMutableArray" id="gOj-Qu-EXS"/>
                         <outletCollection property="lawDescriptions" destination="8eP-zx-IdO" collectionClass="NSMutableArray" id="DRd-ff-H8c"/>
+                        <outletCollection property="laws" destination="3vi-7H-Rdr" collectionClass="NSMutableArray" id="o95-8g-T7G"/>
+                        <outletCollection property="laws" destination="Sv3-fO-kfa" collectionClass="NSMutableArray" id="qrv-8X-85X"/>
+                        <outletCollection property="laws" destination="zyW-gU-y8w" collectionClass="NSMutableArray" id="eVt-tc-BXE"/>
+                        <outletCollection property="laws" destination="vBQ-oJ-liS" collectionClass="NSMutableArray" id="zla-x3-TWK"/>
+                        <outletCollection property="laws" destination="kCc-ot-iv2" collectionClass="NSMutableArray" id="4jQ-tv-Au4"/>
+                        <outletCollection property="laws" destination="auq-2M-6Zm" collectionClass="NSMutableArray" id="w8L-5p-Mr0"/>
+                        <outletCollection property="laws" destination="36k-cD-OFP" collectionClass="NSMutableArray" id="ek2-AA-P9L"/>
+                        <outletCollection property="laws" destination="v2L-E8-f1w" collectionClass="NSMutableArray" id="yDt-mw-Rf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kce-Vf-XbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vue-fK-85B">
+                    <connections>
+                        <action selector="onTappedScreen:" destination="spo-is-JXH" id="enc-7J-Op3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="821.60000000000002" y="133.5832083958021"/>
         </scene>
@@ -606,6 +748,7 @@
                     <connections>
                         <outlet property="highLabel" destination="ZV7-TK-tPz" id="HSl-up-eZs"/>
                         <outlet property="lowLabel" destination="ROh-Nv-9ip" id="zbb-Ph-3zF"/>
+                        <outlet property="segment" destination="1Qv-eM-i6r" id="KIe-ft-KMd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Mn-Ep-yVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -732,6 +875,14 @@
                                     <constraint firstAttribute="width" constant="258" id="Btp-fK-fh4"/>
                                     <constraint firstAttribute="height" constant="224" id="Lkn-3c-bSa"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uto-L6-xPt">
                                 <rect key="frame" x="16" y="626" width="343" height="33"/>

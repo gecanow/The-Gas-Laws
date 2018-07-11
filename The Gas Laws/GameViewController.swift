@@ -52,8 +52,8 @@ class GameViewController: UIViewController {
             
             view.ignoresSiblingOrder = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
         
         setLabels()
@@ -165,14 +165,6 @@ class GameViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
     //=====================//
     // AUTOMATED FUNCTIONS //
     //=====================//
@@ -197,8 +189,4 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-//    @IBAction func onTappedBack(_ sender: UIButton) {
-//        performSegue(withIdentifier: "unwindSegue", sender: self)
-//    }
 }

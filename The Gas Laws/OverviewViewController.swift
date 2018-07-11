@@ -46,10 +46,14 @@ class OverviewViewController: UIViewController {
     func didTap(atIndex: Int) {
         if laws[atIndex].backgroundColor == .lightGray {
             laws[atIndex].text = answers[atIndex]
+            laws[atIndex].textAlignment = .left
             laws[atIndex].backgroundColor = .clear
+            laws[atIndex].layer.borderWidth = 0
         } else {
-            laws[atIndex].text = " Tap To Reveal"
+            laws[atIndex].text = "Tap To Reveal"
+            laws[atIndex].textAlignment = .center
             laws[atIndex].backgroundColor = .lightGray
+            laws[atIndex].layer.borderWidth = 1
         }
     }
 }
